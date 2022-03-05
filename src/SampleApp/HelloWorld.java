@@ -1,4 +1,4 @@
-package SamlpeApp;
+package SampleApp;
 
 public class HelloWorld {
 
