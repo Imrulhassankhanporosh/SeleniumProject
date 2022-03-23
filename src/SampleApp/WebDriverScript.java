@@ -14,12 +14,12 @@ public class WebDriverScript {
 
         // declaration and instantiation of objects/variables
 
-       System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver","H:\\chromedriver.exe");
        WebDriver driver = new ChromeDriver();
 
         //comment the above 2 lines and uncomment below 2 lines to use Firefox
 
-        //System.setProperty("webdriver.gecko.driver","D:\\geckodriver.exe");
+        //System.setProperty("webdriver.gecko.driver","H:\\geckodriver.exe");
         //WebDriver driver = new FirefoxDriver();
 
         //String baseUrl = "http://demo.guru99.com/test/newtours/";
