@@ -24,7 +24,27 @@ public class WebDriverScript {
 
         //String baseUrl = "http://demo.guru99.com/test/newtours/";
         //String baseUrl = "http://www.google.com";
-        driver.get("http://www.google.com");
-        //driver.quit();
+
+
+        String baseUrl = "http://demo.guru99.com/test/newtours/";
+        String expectedTitle = "Welcome: Mercury Tours";
+        String actualTitle = "";
+
+        // launch Fire fox and direct it to the Base URL
+        driver.get(baseUrl);
+
+        // get the actual value of the title
+        actualTitle = driver.getTitle();
+
+        if (actualTitle.contentEquals(expectedTitle)){
+            System.out.println("Test Passed!");
+        } else {
+            System.out.println("Test Failed");
+        }
+
+        // launch Fire fox and direct it to the Base URL
+        // driver.get(baseUrl);
+       // driver.get("http://www.google.com");
+        driver.quit();
     }
 }
